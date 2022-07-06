@@ -1,0 +1,48 @@
+.box {
+    padding: 80px 60px;
+    background: navy;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 30px;
+
+
+}
+
+.container {
+    display:flex;
+    flex-direction: column;     
+    max-width: 800px;    margin: 0, auto;
+}
+
+.col {
+    display: flex;      flex-direction: column;
+    text-align: center;   margin:0, 50px;
+}
+
+.row {
+    display: grid;
+    color: burlywood;
+    grid-template-columns: repeat(auto-fill, 
+                             minmax(185px,1fr));
+    gap: 50px;
+    @media (max-width:1000px) {
+        grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    }
+}
+
+.head {
+    font-size: 20px;
+    margin-bottom: 20px;    font-weight: bold;
+}
+
+dt {
+    margin-bottom: 10px;
+    font-size: 15px;
+    transition: 0.3s ease-in;
+
+}
+
+dt:hover {
+   color: aqua;     
+}

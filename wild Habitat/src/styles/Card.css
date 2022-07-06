@@ -1,0 +1,42 @@
+body {
+    font-family: 'Baloo 2', cursive;    font-size: 16px;
+    color: 'white'; 
+    text-rendering: optimizeLegibility;
+    font-weight: initial;
+}
+
+.dark {
+    background: goldenrod;
+}
+
+#pageTitle {
+    margin: 2rem 0;     text-transform: uppercase;
+    text-align: center;     font-size: 2.5rem;
+}
+
+.postcard {
+    flex-wrap: wrap;
+    box-shadow: 0 4px 21px -12px rgba(0,0,0, 0.66);
+    border-radius: 10px;    margin: 0 0 2rem 0;
+    overflow: hidden;       position: relative;
+    color: beige;
+}
+
+.h1 {
+    line-height: 1.2;
+}
+
+.postcard_img {
+    max-height: 180px;      width: 100%;
+    object-fit: cover;      position: relative;
+}
+
+.postcard_text{
+    padding: 1.5rem;        position: relative;
+    display: flex;          flex-direction: column;
+}
+
+.postcard_info {
+    overflow: hidden;       text-overflow: ellipsis;
+    text-align: justify;    height: 100%;
+}
