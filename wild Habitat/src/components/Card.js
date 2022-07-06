@@ -11,7 +11,7 @@ export default function Card( { id, name, category, img } ) {
             <div className='container py-4'>
 
                 <article className='postcard dark blue'>
-                    <img className='postcard_img'  src={img} alt='Image-title' />
+                    <img className='postcard_img'  src={img} alt={`${name} image not found`} />
 
                     <div className='postcard_text'>
                         <h2 className='blue' style={{fontSize: '1.75rem'}}>{name}</h2>
